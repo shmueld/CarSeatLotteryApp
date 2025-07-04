@@ -188,3 +188,71 @@ To learn more about Next.js, take a look at the following resources:
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Deploy to GitHub Pages / פריסה ל-GitHub Pages
+
+### English
+
+This project is configured for automatic deployment to GitHub Pages using GitHub Actions.
+
+#### Setup Steps:
+
+1. **Push to GitHub**: Make sure your code is pushed to a GitHub repository
+2. **Enable GitHub Pages**: 
+   - Go to your repository settings
+   - Navigate to "Pages" section
+   - Select "GitHub Actions" as the source
+3. **Automatic Deployment**: Every push to the `main` branch will trigger an automatic deployment
+
+#### Manual Deployment:
+
+```bash
+# Build the project for production
+npm run build
+
+# The static files will be generated in the 'out' folder
+# Upload the contents of 'out' folder to your hosting service
+```
+
+#### Local Testing:
+
+```bash
+# Test the production build locally
+npm run build
+npx serve out
+```
+
+The app will be available at: `https://[your-username].github.io/CarSeatLotteryApp/`
+
+### עברית
+
+הפרויקט מוגדר לפריסה אוטומטית ל-GitHub Pages באמצעות GitHub Actions.
+
+#### שלבי הגדרה:
+
+1. **העלאה ל-GitHub**: ודא שהקוד מועלה לריפוזיטורי GitHub
+2. **הפעלת GitHub Pages**:
+   - עבור להגדרות הריפוזיטורי
+   - נווט לקטע "Pages"
+   - בחר "GitHub Actions" כמקור
+3. **פריסה אוטומטית**: כל push לענף `main` יפעיל פריסה אוטומטית
+
+#### פריסה ידנית:
+
+```bash
+# בניית הפרויקט לפרודקשן
+npm run build
+
+# הקבצים הסטטיים ייווצרו בתיקיית 'out'
+# העלה את תוכן תיקיית 'out' לשירות האחסון שלך
+```
+
+#### בדיקה מקומית:
+
+```bash
+# בדיקת הבילד לפרודקשן מקומית
+npm run build
+npx serve out
+```
+
+האפליקציה תהיה זמינה בכתובת: `https://[your-username].github.io/CarSeatLotteryApp/`

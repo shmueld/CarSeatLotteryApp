@@ -1,6 +1,5 @@
 
 'use client';
-import Image from "next/image";
 import React from "react";
 
 export default function Home() {
@@ -130,7 +129,7 @@ export default function Home() {
     const results: {[seatId: number]: string} = {};
 
     // Create a copy of passengers to track who's already assigned
-    let unassignedPassengers = [...eligiblePassengers];
+    const unassignedPassengers = [...eligiblePassengers];
 
     // Sort passengers by number of excluded seats (most excluded first)
     // This ensures passengers with more restrictions get priority
